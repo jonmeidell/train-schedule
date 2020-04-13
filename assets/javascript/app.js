@@ -17,7 +17,7 @@
 		}
 	}
     // firebase data
-    config firebaseConfig = {
+    firebaseConfig = {
         apiKey: "AIzaSyC3LOThCw74UoaujBPP78RbNovAh9io2aM",
         authDomain: "school-jnm.firebaseapp.com",
         databaseURL: "https://school-jnm.firebaseio.com",
