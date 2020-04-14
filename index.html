@@ -9,7 +9,67 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
 <body>
-
+    <div class="container">
+        <!-- jumbotron -->
+        <div class="jumbotron jumbotron-fluid text-center">
+            <div class="container">
+                <h1 class="display-4">UDOT Trax Schedule</h1>
+                <p class="lead">A list of all the train lines and their weekday schedule</p>
+            </div>
+        </div>
+        <!-- table -->
+        <div class="card">
+            <div class="card-header">
+                Current Employees
+            </div>
+            <div class="card-body">
+                <table class="table">
+                    <thead>
+                        <th scope="col">TRAX Line</th>
+                        <th scope="col">First Stop</th>
+                        <th scope="col">Next Arrival</th>
+                        <th scope="col">Frequency</th>
+                        <th scope="col">Last Stop</th>
+                        <th scope="col">Minutes Away</th>
+                    </thead>
+                    <tbody class="tbody">
+                        <tr>
+                            <td id=lineOutput></td>
+                            <td id=stopOutput></td>
+                            <td id=nextArrivalOutput></td>
+                            <td id=frequencyOutput></td>
+                            <td id=lastStopOutput></td>
+                            <td id=minutesAwayOutput></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- form to add employee -->
+        <div class="card">
+            <div class="card-header">
+                Find your next train
+            </div>
+            <div class="card-body">
+                <div action="#">
+                    <!-- train line -->
+                    <div class="form-group">
+                        <lable for="trainLineInput">Train Line:</lable>
+                        <input type="text" id=trainLineInput class="form-control">
+                    </div>
+                    <!-- time -->
+                    <div class="form-group">
+                        <lable for="timeInput">Time:</lable>
+                        <input type="text" id=timeInput class="form-control">
+                    </div>
+                    <!-- submit button -->
+                    <div class="form-group">
+                        <button type="submit" class="btn blue">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- should this go above or below jquery? -->
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 
